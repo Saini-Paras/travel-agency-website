@@ -1,0 +1,14 @@
+@mixin flex {
+    display: flex;
+    align-items: center;
+}
+
+
+
+@mixin responsive($break) {
+   @if$break==1360{ @media (max-width:1360px){@content}};
+   @if$break==1100{ @media (max-width:1100px){@content}};
+   @if$break==995{ @media (max-width:995px){@content}};
+   @if$break==900{ @media (max-width:900px){@content}};
+   @if$break==800{ @media (max-width:800px){@content}};
+}

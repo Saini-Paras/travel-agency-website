@@ -1,0 +1,112 @@
+.footer{
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-right: 3rem;
+        position: relative;
+        padding-bottom: 8rem;
+    }
+    &__head{
+        line-height: 1.1;
+    }
+    &__logo{
+        color: $medium-blue;
+        font-weight: 500;
+        font-size: 4rem;
+    }
+    &__description{
+        line-height: 1.4;
+        margin-top: 1.4rem;
+        font-size: 1.4rem;
+    }
+    &__links{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 50rem;
+    }
+    &__list{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    &__list-heading{
+        font-size: 1.8rem;
+        margin-bottom: 1.6rem;
+        color: $dark-blue;
+    }
+    &__item{
+        &:not(:last-child){
+            margin-bottom: 1.2rem;
+        }
+    }
+    &__link{
+        color: $light-blue;
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: 500;
+        &:hover{
+            color: $orange;
+        }
+    }
+
+    // social links
+    &__social-icons{
+        display: flex;
+    }
+    &__social-icon-container{
+        border-radius: 50%;
+        display: inline-block;
+        width: 5rem;
+        height: 5rem;
+        position: relative;
+        box-shadow: 0 .5rem 2rem rgba($black, .1);
+        margin-bottom: 2rem;
+        transition: all .2s;
+
+
+        &:not(:last-child){
+            margin-right: 2rem;
+        }
+
+        &:hover .footer__icon{
+            color: $orange;
+        }
+        &:hover{
+        box-shadow: 0 .5rem 2rem rgba($black, .2);
+        }
+        
+    }
+    &__icon{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 1.5rem;
+        color: $dark-blue;
+        cursor: pointer;
+        transition: all .1s;
+    }
+
+    // download
+    &__social-downloads{
+        display: flex;
+        align-items: center;
+    }
+    &__social-download{
+        width: 16rem;
+    }
+    // copyrights
+    &__copyright{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%)
+    }
+
+}
+.two{
+    width:13rem;
+}

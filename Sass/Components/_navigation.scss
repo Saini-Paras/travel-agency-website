@@ -1,0 +1,86 @@
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3.5rem 0 3rem 0;
+
+    &__logo{
+        // border: 2px solid rebeccapurple;
+    }
+
+    &__list-container{
+        display: block;
+
+        @include responsive(900){
+            display: none;
+        }
+    }
+    &__list{
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__item{
+        &:not(:last-child){
+            margin-right: 4.5rem;
+        }
+    }
+    &__link{
+        &:link,&:visited{
+        text-decoration: none;
+        color: $medium-blue;
+        font-size: 1.6rem;
+        font-weight: 500;
+        transition: all .1s;
+        }
+        &:hover,&:active{
+            color: $orange;
+        }
+
+    }
+    &__login{
+        margin-left: 5rem;
+    }
+
+    &__menu{
+        font-size: 2rem;
+        cursor: pointer;
+        color: $orange;
+        z-index: 500;
+        display: none;
+        transition: all  .5s cubic-bezier(0,.34,.34,1.35);
+        @include responsive(900){
+            display: block;
+            font-size: 3rem;
+        }
+    }
+    &__active-menu{
+        position: fixed;
+        top: 4rem;
+        right: 40rem;
+        // transform: translateX(-30rem);
+    }
+    
+    &__en{
+
+        @include responsive(900){
+            display: none;
+        }
+    }
+}
+#navigation__btn{
+    padding: .8rem 2rem ;
+    border: 2px solid $orange ;
+    color: $white;
+    background-color: $orange;
+    border-radius: 5px ;
+    transition: all .2s;
+    
+
+    &:hover,&:active{
+        color: $orange;
+        background-color: transparent;
+        border: 2px solid $orange;
+    }
+}

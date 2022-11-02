@@ -1,0 +1,96 @@
+.cta{
+    padding-right: 2rem;
+
+    &__box{
+    position: relative;
+
+    }
+    &__container{
+        background-color: $light-purple;
+       border-radius: 20px;
+       border-top-left-radius: 129px;
+        height: 38rem;
+        text-align: center;
+        padding-top: 9rem;
+        position: relative;
+        overflow: hidden;
+        position: relative;
+    }
+    // decor
+    &__decor{
+        position: absolute;
+    }
+    &__decor-1{
+        bottom: -1rem;
+        left: -8rem;
+        width: 45rem;
+        transform: rotate(4deg);
+    }
+    &__decor-2{
+        top: 5rem;
+        right: -7rem;
+        width: 38rem;
+        transform: rotate(280deg);
+    }
+    &__plus-art{
+        position: absolute;
+        right: -6.5rem;
+        bottom: -6rem;
+    }
+    // end of decor
+    &__telegram{
+        position: absolute;
+        top: -2rem;
+        right: .5rem;
+        z-index: 1;
+    }
+    &__heading{
+        color: $light-blue;
+        font-size: 3rem;
+        font-weight: 500;
+    }
+    &__mail{
+        position: relative;
+        // border: 2px solid red;
+        display: inline-block;
+        margin-top: 7rem;
+    }
+    &__input{
+        padding: 1.7rem 2rem 1.7rem 5rem;
+        width: 32rem;
+        border: none;
+        border-radius: 8px;
+        color: $light-blue;
+        font-size: 1.4rem;
+
+        &::placeholder{
+            color: $light-blue;
+            font-family: 'Poppins',sans-serif;
+            font-size: 1.4rem;
+        }
+        &:focus{
+            outline: none;
+        }
+    }
+    &__email-icon{
+        font-size: 1.5rem;
+        color: $light-blue;
+        position: absolute;
+        left: 2rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &__btn{
+        padding: 1.7rem 2.5rem;
+        border-radius: 8px;
+        background-image: linear-gradient(to bottom,#FF946D,#FF7D68);
+        border: none;
+        color: $white;
+        font-size: 1.4rem;
+        cursor: pointer;
+        margin-left: 1rem;
+        &:hover{
+            background-image: linear-gradient(to bottom, #fe9a76,#ff826f);
+        }
+    }
+}

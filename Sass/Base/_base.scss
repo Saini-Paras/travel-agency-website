@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=Volkhov:wght@400;700&display=swap');
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    @include responsive(1360){
+        font-size: 50%;
+    }
+    @include responsive(1100){
+        font-size: 45%;
+    }
+    @include responsive(995){
+        font-size: 40%;
+    }
+    @include responsive(800){
+        font-size: 35%;
+    }
+}
+body{
+    font-family: 'Poppins',sans-serif;
+}
+
+
+
+// --------------------Global class
+

@@ -1,0 +1,25 @@
+.heading{
+
+    &-primary{
+        font-family: "Volkhov",serif;
+        font-size: 7rem ;
+        color: $dark-blue;
+        line-height: 1.2;
+    }
+    &-secondary{
+        font-family: 'Volkhov',serif;
+        font-size: 4.5rem;
+        color: $dark-blue;
+        text-transform: capitalize;
+    }
+    &-tertiary{
+        color: $dark-grey;
+        font-size: 1.5rem;
+    }
+}
+.description{
+    color: $light-blue;
+    font-size: 1.45rem;
+    font-weight: 500;
+    line-height: 1.7;
+}

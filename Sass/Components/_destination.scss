@@ -1,0 +1,71 @@
+.destination{
+    position: relative;
+    &__decor{
+        position: absolute;
+        bottom: 15rem;
+        right: 0;
+        z-index: -1 ;
+    }
+    &__cards{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 4rem;
+    }
+    &__card{
+        background-color: $white;
+        display: inline-block;
+        width: 32.5rem;
+        height: 43rem;
+        box-shadow: 0 1rem 2rem rgba($black, 0.1);
+        border-radius: 20px;
+        transition: all .1s;
+        position: relative;
+
+        &:hover{
+        box-shadow: 0 1.5rem 2rem rgba($black, 0.15);
+
+            transform: scale(1.01) translateY(-6px);
+        }
+
+    }
+    &__img{
+        height: 32rem;
+        background-position: center;
+        background-size: cover;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        overflow: hidden;
+
+        &-1{
+        // background-image: url("/Images/Rome.jpg");
+        }
+        &-2{
+        // background-image: url("/Images/marcin-nowak-iXqTqC-f6jI-unsplash.jpg");
+        }
+        &-3{
+        // background-image: url("/Images/pexels-jimmy-teoh-1010657.jpg");
+        }
+        & img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+        }
+    }
+    &__textarea{
+        padding: 2rem 1.5rem 3rem 1.5rem;
+    }
+    &__details{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1.5rem;
+        font-weight: 500;
+    }
+    &__duration{
+        i{
+            color: $orange;
+            margin-right: 1rem;
+        }
+    }
+
+}

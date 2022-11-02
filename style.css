@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=Volkhov:wght@400;700&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Poppins',sans-serif; }
+
+.row {
+  width: 95%;
+  max-width: 124rem;
+  margin: 0 auto; }
+
+.heading-primary {
+  font-family: "Volkhov",serif;
+  font-size: 7rem;
+  color: #181E4B; }
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 0; }
+  .navigation__list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .navigation__item:not(:last-child) {
+    margin-right: 4.5rem; }
+  .navigation__link {
+    text-decoration: none;
+    color: #212832;
+    font-size: 1.6rem;
+    font-weight: 600; }

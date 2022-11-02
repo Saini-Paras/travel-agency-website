@@ -1,0 +1,78 @@
+.hero {
+  position: relative;
+  max-width: 153.6rem;
+  margin: 0 auto;
+  
+
+  &__main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__tagline {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    color: $orange;
+    margin-bottom: 1rem;
+  }
+  &__textarea {
+    position: relative;
+    top: -1.5rem;
+  }
+  &__heading-decor {
+    position: absolute;
+    top: 9rem;
+    left: 22rem;
+    z-index: -1;
+    width: 30rem;
+    height: 4rem;
+  }
+  &__description {
+    margin-top: 1rem;
+  }
+  &__cta {
+    @include flex;
+    margin-top: 1.5rem;
+  }
+  &__btn {
+    &:link,
+    &:visited {
+      padding: 0.9rem 2rem;
+      border: 2px solid $orange;
+      background-color: $orange;
+      color: $white;
+      border-radius: 5px;
+    }
+    &:hover,
+    &:active {
+      color: $orange;
+      background-color: transparent;
+    }
+  }
+  &__play-btn {
+    text-decoration: none;
+    color: $dark-grey;
+    font-size: 1.5rem;
+    margin-left: 3rem;
+    @include flex;
+    span img {
+      width: 6rem;
+      margin-right: 1rem;
+      border-radius: 50px;
+    }
+  }
+
+  // hero decor
+  &__decoration {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 60rem;
+  }
+  &__image {
+    width: 63rem;
+    // border: 2px solid;
+    margin-right: 2rem;
+  }
+}

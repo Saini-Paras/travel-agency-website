@@ -1,0 +1,79 @@
+.navigation{
+
+    &__toggle-list-container{
+        
+    }
+    &__toggle-list-container{
+        width: 45rem;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 21;
+        background-color: $medium-blue;
+        display: block;
+        opacity: 0;
+        display: none;
+        transition: all .5s
+    }
+    &__toggle-display{
+        display: block;
+        opacity: 1;
+    }
+
+    &__toggle-list{
+        list-style-type: none;
+        margin-top: 12rem;
+    }
+    &__toggle-item{
+        width: 100%;
+        padding: 2rem 2rem 2rem 3.5rem;
+        transition: background .2s;
+        cursor: pointer;
+
+        &:hover{
+        background-color: $orange;
+        }
+
+    }
+    &__toggle-link{
+        &:link,&:visited{
+        color: $white ;
+        text-decoration: none;
+        font-size: 1.6rem;
+        // font-weight: 500;
+        transition: all .1s;
+        }
+    }
+    &__toggle-login{
+        
+    }
+    &__toggle-social-icons{
+        padding: 4rem;
+        display: flex;
+        // justify-content: cent    er;
+        margin-top: .5rem;
+    }
+    &__toggle-social-icon-container{
+        background-color: $orange;
+        box-shadow: 0 1rem 2rem rgba($black, .2);
+        position: relative;
+        height: 4.5rem;
+        width: 4.5rem;
+        border-radius: 50%;
+        cursor: pointer;
+        &:not(:last-child){
+            margin-right: 3rem;
+        }
+    }
+
+    &__toggle-icon{
+        font-size: 1.8rem;
+        color: $white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+       
+    }
+}
